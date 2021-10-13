@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/main.css">
+   <title>Films</title>
+</head>
+
+<body>
+
+   <main class="main">
+      <section class="film" id="all">
+         <div class="container">
+
+            <div class="box">
+               <h1 class="heading">Films</h1>
+               <form class="form">
+
+                  <input class="search" type="search" placeholder="Search">
+
+                  <select class="form__select">
+                     <option value="all">All</option>
+                  </select>
+
+                  <select class="select__sort">
+                     <option value="0">A-Z</option>
+                     <option value="1">Z-A</option>
+                     <option value="3">New-Old</option>
+                     <option value="2">Old-New</option>
+                  </select>
+
+                  <button class="btn" type="submit">Submit</button>
+
+                  <span class="bookmarks__strong">
+                     <a class="bookmarks__link btn" href="#bookmarks">Bookmarks</a>
+                  </span>
+               </form>
+            </div>
+            <ul class="list"></ul>
+
+         </div>
+      </section>
+
+
+      <section class="bookmarks" id="bookmarks">
+         <div class="container">
+            <h2 class="heading">Bookmarks</h2>
+            <span class="bookmarks__back-btn">
+               <a class="bookmarks__link btn" href="#all">Back</a>
+            </span>
+
+            <ul class="bookmarks__list list"></ul>
+         </div>
+      </section>
+   </main>
+
+
+   <div class="modal">
+      <!-- <ul class="modal__list"></ul> -->
+
+
+   </div>
+
+   <script src="./js/films.js"></script>
+   <script src="./js/utils.js"></script>
+   <script src="./js/main.js"></script>
+</body>
+
+</html>
